@@ -41,6 +41,11 @@ This step will install the CPU version of torch and torchvision. If you want a b
 After configuring the environment, run main.py in the working directory that contains the file. You can also download the compressed package from the following link and use the exe file to run it:<br>
 https://pan.baidu.com/s/1U9dskWzOouF4y1_s7KnPfg?pwd=Zlad Password: Zlad
 
+## 参考(REFERENCE)
+https://github.com/Jai-wei/YOLOv8-PySide6-GUI<br>
+https://github.com/ultralytics/ultralytics<br>
+https://doc.qt.io/qtforpython-6/
+
 
 
 
