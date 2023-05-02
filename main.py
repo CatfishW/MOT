@@ -303,10 +303,25 @@ class YoloPredictor(BasePredictor, QObject):
                                 f"OBJECT-ID: {tracker_id} CLASS: {model.model.names[class_id]} CF: {confidence:0.2f}"
                                 for _,_,confidence,class_id,tracker_id in detections
                             ]
+                            '''
+                            如果Torch装的是cuda版本的话：302行的代码需改成：
+                              labels = [
+                                f"OBJECT-ID: {tracker_id} CLASS: {model.model.names[class_id]} CF: {confidence:0.2f}"
+                                for _,confidence,class_id,tracker_id in detections
+                            ]
+                        
+                            '''
                             labels2 = [
                                 f"目标ID: {tracker_id} 目标类别: {model.model.names[class_id]} 置信度: {confidence:0.2f}"
                                 for _,_,confidence,class_id,tracker_id in detections
                             ]
+                            '''
+                              如果Torch装的是cuda版本的话：314行的代码需改成：
+                              labels2 = [
+                                f"OBJECT-ID: {tracker_id} CLASS: {model.model.names[class_id]} CF: {confidence:0.2f}"
+                                for _,confidence,class_id,tracker_id in detections
+                            ]
+                            '''
                             #存储labels里的信息
                             if self.save_txt:
                                 with open('labels/result.txt','a') as f:
