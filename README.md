@@ -8,7 +8,7 @@ https://youtu.be/_77LrsXaYzM
 2）选择相应的操作系统版本并下载对应的安装包（推荐下载64位版本）<br>
 3）打开下载的安装包，按照提示进行安装即可<br>
 4）创建一个虚拟环境：<br>
-conda create --name 自命名 python=3.19.16<br>
+conda create --name 自命名 python=3.9.16<br>
 <br>
 ## 第二步（SECOND STEP) pip install -r requirements.txt<br>
 激活环境并安装相应的库：  activate 自命名-> pip install -r requirements.txt<br>
